@@ -1,10 +1,10 @@
-// Routes.js
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
-import Login from './Login';
-import Home from './Home';
+import Login from './pages/Login';
+import Home from './pages/Home';
 
 const AppRoutes = () => {
+    
     let isAuthenticated = false;
     const localToken = localStorage.getItem('authToken');
     if(localToken !== "null"){

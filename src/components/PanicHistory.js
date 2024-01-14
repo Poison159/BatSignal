@@ -9,7 +9,6 @@ import {
     Select,
     MenuItem
 } from '@mui/material';
-
 import CancelIcon from '@mui/icons-material/Cancel';
 import axios from 'axios';
 
@@ -23,7 +22,7 @@ const PanicHistory = () => {
         '2': 'Cancelled',
         '3': 'Resolved',
     };
-
+    
     useEffect(() => {
         const fetchPanicHistory = async () => {
             try {

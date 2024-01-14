@@ -1,10 +1,10 @@
-// PanicButton.js
 import React, { useState } from 'react';
 import { Button, Dialog, DialogTitle, DialogContent, DialogActions } from '@mui/material';
-import PanicForm from './PanicForm';
+import PanicForm from '../components/PanicForm';
 import './Home.css'
-import PanicHistory from './PanicHistory';
-import ButtonAppBar from './AppBar';
+import PanicHistory from '../components/PanicHistory';
+import ButtonAppBar from '../components/AppBar';
+
 
 const PanicButton = () => {
     const [open, setOpen] = useState(false);
@@ -22,9 +22,9 @@ const PanicButton = () => {
 
     return (
         <div className='blurred-background'>
-            <ButtonAppBar/>
+            <ButtonAppBar />
             <div className='container'>
-                
+
                 <div className="center">
                     <Button onClick={() => setOpen(true)} variant="contained" color="secondary">
                         Panic Button
@@ -50,8 +50,8 @@ const PanicButton = () => {
                 </Dialog>
             </div>
             <div className='center-history'>
-                    <PanicHistory />
-                </div>
+                <PanicHistory />
+            </div>
         </div>
 
 
