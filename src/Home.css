@@ -1,0 +1,22 @@
+.container {
+    height: 200px;
+    position: relative;
+  }
+  
+  .center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .center-history {
+    justify-content: center;
+    display: flex;
+  }
+
+  .blurred-background {
+    background: url('https://i.pinimg.com/736x/98/24/a2/9824a282bb1531964a4d5f39ef9240b6.jpg') center/cover no-repeat;
+  }
